@@ -1,16 +1,13 @@
 
-//single line comment
+let word = "Supercalifragilisticexpialidocious";
+let number = 707;
+let bignumber = 1n;
 
-/*
+console.log(word.length);
+console.log(number);
+console.log(bignumber);
 
-multi line comment
-
-*/
-let x = "Hi ny name is Genesis Mangunay!!!";
-let y = "My favorite food is Oreos!!!";
-
-console.log(x);
-console.log(y);
-
-//console.log( "Genesis Mangunay");
-//console.log( "My favorite food is Oreos");
+//type of
+console.log(typeof(word));
+console.log(typeof(number));
+console.log(typeof(bignumber));

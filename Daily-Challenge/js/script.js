@@ -1,16 +1,19 @@
+//Challenge 1
+const userName = prompt("What is your first name?");
+//to reverse, must convert string into array
+const array = userName.split('');
+//storing array 
+const arrayReverse = array.reverse();
+//.join gets rid of ''
+ alert(`The reverse is: ${arrayReverse.join('')}`);
 
-//single line comment
-
-/*
-
-multi line comment
-
-*/
-let x = "Hi ny name is Genesis Mangunay!!!";
-let y = "My favorite food is Oreos!!!";
-
-console.log(x);
-console.log(y);
-
-//console.log( "Genesis Mangunay");
-//console.log( "My favorite food is Oreos");
+ //Challenge 2
+ //these inputs will store as a string
+ const input1 = prompt("Provide a number value: ");
+ const input2 = prompt("Provide another number value: ");
+ //need to convert string into integers using parseInt() 
+ const x = parseInt(input1);
+ const y = parseInt (input2);
+//get the sum
+ const sum = x + y;
+alert(`The sum is: ${sum}`);

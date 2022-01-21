@@ -56,18 +56,18 @@ function fizzbuzz(){
 
 function logicalOperators(){
     //AND &&
-    const val1 = true && true // true
-    const val2 = true && false // false
-    const val3 = false && true // false
-    const val4 = false && false // false
+    const ANDval1 = true && true // true
+    const ANDval2 = true && false // false
+    const ANDval3 = false && true // false
+    const ANDval4 = false && false // false
     //OR ||
-    const val1 = true && true // true
-    const val2 = true && false //true
-    const val3 = false && true // true
-    const val4 = false && false // false
+    const ORval1 = true && true // true
+    const ORval2 = true && false //true
+    const ORval3 = false && true // true
+    const ORval4 = false && false // false
     //NOT !
-    const val1 = !true // false
-    const val2 = !false //true
+    const NOTval1 = !true // false
+    const NOTval2 = !false //true
 }
 
 function guessingGame(){
@@ -86,7 +86,7 @@ function guessingGame(){
                 alert("You win!");
             }
             else{
-               alert("You lose!");
+               alert(`You lose! The number was ${numToGuess}`);
             }
         }
 

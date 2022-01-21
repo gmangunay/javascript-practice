@@ -53,3 +53,43 @@ function fizzbuzz(){
         
     }
 }
+
+function logicalOperators(){
+    //AND &&
+    const val1 = true && true // true
+    const val2 = true && false // false
+    const val3 = false && true // false
+    const val4 = false && false // false
+    //OR ||
+    const val1 = true && true // true
+    const val2 = true && false //true
+    const val3 = false && true // true
+    const val4 = false && false // false
+    //NOT !
+    const val1 = !true // false
+    const val2 = !false //true
+}
+
+function guessingGame(){
+    const numToGuess = Math.floor(Math.random() * 100) % 10 + 1;
+    let guess = prompt("Guess a number between 1 and 10");
+    let parsedGuess = parseInt(guess);
+    if(typeof parsedGuess === "number" && !isNaN(parsedGuess)){
+
+        if(parsedGuess === numToGuess){
+            alert("You win!");
+        }
+        else{
+            guess = prompt("Guess a number between 1 and 10");
+            parsedGuess = parseInt(guess);
+            if(parsedGuess === numToGuess){
+                alert("You win!");
+            }
+            else{
+               alert("You lose!");
+            }
+        }
+
+    }
+
+}

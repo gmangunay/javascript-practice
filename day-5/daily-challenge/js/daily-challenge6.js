@@ -1,13 +1,13 @@
-function oddEven(){
-const input = prompt("Enter a numer:");
-const parseInput = parseInt(input);
+function oddEven(input){
+// const input = prompt("Enter a numer:");
+// const parseInput = parseInt(input);
 
-    if(!isNaN(parseInput)){
-        if(parseInput % 2 === 0){
-            alert(`${parseInput} is even`);
+    if(!isNaN(input)){
+        if(input % 2 === 0){
+            alert(`${input} is even`);
         }
         else{
-            alert(`${parseInput} is odd`);
+            alert(`${input} is odd`);
         }
     }
     else{
@@ -20,4 +20,17 @@ const parseInput = parseInt(input);
 // }
 // function isOdd(){
 // alert(" is Odd");
+// }
+
+//get user input with another function
+
+function getInput(){
+    const input = prompt("Enter a numer:");
+    const parseInput = parseInt(input);
+    oddEven(parseInput);
+
+}
+// arrow function syntax
+// const getinput = () => {
+
 // }
